@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/icons/bank.png">
+
+    <title>ATM</title>
+</head>
+
+<body>
+
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="card color-card" style="width: 25rem; height: 25rem;">
+            <div
+                class="card-body d-flex justify-content-center align-content-center flex-column align-items-center background-card-body">
+                <h1 id="welcomeuser" class="text-center">Welcome!</h1>
+                <form id="infohide">
+                    <div class="mb-3 " id="optionsList">
+
+                        <select id="user-list" class="form-select -bg-secondary mb-3 " aria-label="selector">
+                            <option selected>Choose a user:</option>
+                            <option value="Luca">Luca</option>
+                            <option value="Mateo">Mateo</option>
+                            <option value="Grettel">Grettel</option>
+
+                        </select>
+
+                    </div>
+                    <div class="mb-3" id="hidePassword">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div id="emailHelp" class="form-text mb-3">We'll never share your password with anyone else.</div>
+
+                    <div class="mb-3 form-check" id="idSubmit">
+                        <button id="button" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                    <div class="mb-3 hintOptions" id="idInsert">
+                        <input type="text" class="form-control" id="ingresarCantidad" >
+                    </div>
+
+                    <div class="mb-3 hintOptions" id="idConsult">
+                        <button id="Consult" type="submit" class="btn btn-primary">Consult</button>
+                    </div>
+                    <div class="mb-3 hintOptions" id="idGetCash">
+                        <button id="getCash" type="submit" class="btn btn-primary">Get cash</button>
+                    </div>
+                    <div class="mb-3 hintOptions" id="idDeposit">
+                        <button id="Deposit" type="submit" class="btn btn-primary">Deposit</button>
+                    </div>
+                    <div class="mb-3 hintOptions" id="idConfirm">
+                        <button id="idConfirmAmount" type="submit" class="btn btn-primary">Confirm</button>
+                    </div>
+                    <div class="mb-3 hintOptions" id="idDepositar">
+                        <button id="idConfirmDepositAmount" type="submit" class="btn btn-primary">ConfirmDeposit</button>
+                    </div>
+                    <div class="mb-3 hintOptions" id="idCloseLogin">
+                        <button id="closeLogin" type="submit" class="btn btn-primary">Log out</button>
+                    </div>
+                    <div class="mb-3 hintOptions" id="idbackToOptions">
+                        <button id="backToOptions" type="submit" class="btn btn-primary">Back to options</button>
+                    </div>
+                    
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./db.js" defer></script>
+    <script src="./app.js" defer></script>
+    <script src="./elements.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

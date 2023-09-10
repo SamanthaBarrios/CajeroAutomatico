@@ -1,0 +1,17 @@
+*{
+    margin: 0PX;
+    padding: 0px;
+}
+
+.color-card{
+    box-shadow: rgba(74, 198, 183, 0.56) 0px 22px 70px 4px;
+}
+
+.background-card-body{
+
+    background-image: linear-gradient( rgb(133, 188, 240), rgb(130, 227, 191));
+}
+
+.hintOptions{
+    display: none;
+}
